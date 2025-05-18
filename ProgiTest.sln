@@ -7,6 +7,8 @@ Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "progitest.client", "progite
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgiTest.Server", "ProgiTest.Server\ProgiTest.Server.csproj", "{4DB95F98-05E9-456D-B484-BCADE071A456}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgiTest.Server.Tests", "ProgiTest.Server.Tests\ProgiTest.Server.Tests.csproj", "{42E0AD0B-5DA3-4B2A-A5E7-C29D1D81F0C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{4DB95F98-05E9-456D-B484-BCADE071A456}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DB95F98-05E9-456D-B484-BCADE071A456}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DB95F98-05E9-456D-B484-BCADE071A456}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42E0AD0B-5DA3-4B2A-A5E7-C29D1D81F0C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42E0AD0B-5DA3-4B2A-A5E7-C29D1D81F0C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42E0AD0B-5DA3-4B2A-A5E7-C29D1D81F0C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42E0AD0B-5DA3-4B2A-A5E7-C29D1D81F0C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

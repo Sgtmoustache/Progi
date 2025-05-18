@@ -7,6 +7,7 @@
     <SpaRoot>..\progitest.client</SpaRoot>
     <SpaProxyLaunchCommand>npm run dev</SpaProxyLaunchCommand>
     <SpaProxyServerUrl>https://localhost:53764</SpaProxyServerUrl>
+    <RootNamespace>ProgiTest.Server</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

@@ -3,19 +3,26 @@
     this.baseURL = 'https://localhost:7210';
   }
 
-  async getTotalValue(basePrice, type) {
+  async getCalculationResult(carPrice, type) {
     try {
-      const response = await fetch(`${this.baseURL}/Calculator?basePrice=${basePrice}&type=${type}`);
+      const response = await fetch(`${this.baseURL}/Calculator`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({carPrice: carPrice, carType: type}),
+      });
+
       if (!response.ok) {
         throw new Error('Network response was not ok ' + response.statusText);
       }
-      const totalValue = await response.json();
-      return totalValue;
+      return await response.json();
     } catch (error) {
       console.error('Error fetching total value:', error);
       throw error;
     }
   }
+
 
   async getCarTypes() {
     try {
@@ -23,8 +30,7 @@
       if (!response.ok) {
         throw new Error('Network response was not ok ' + response.statusText);
       }
-      const carTypes = await response.json();
-      return carTypes;
+      return await response.json();
     } catch (error) {
       console.error('Error fetching total value:', error);
       throw error;
