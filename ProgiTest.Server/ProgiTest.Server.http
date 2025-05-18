@@ -1,0 +1,6 @@
+@ProgiTest.Server_HostAddress = http://localhost:5183
+
+GET {{ProgiTest.Server_HostAddress}}/progitest/
+Accept: application/json
+
+###
